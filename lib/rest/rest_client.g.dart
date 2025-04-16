@@ -222,22 +222,20 @@ class _RestClient implements RestClient {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
-
     final _data = body;
-
     final _options = _setStreamType<dynamic>(Options(
       method: 'POST',
       headers: _headers,
       extra: _extra,
     )
         .compose(
-      _dio.options,
-      'SalesInvoice/SalesOrderInsertandUpdate?',
-      queryParameters: queryParameters,
-      data: _data,
-    )
+          _dio.options,
+          'SalesInvoice/SalesOrderInsertandUpdate?',
+          queryParameters: queryParameters,
+          data: _data,
+        )
         .copyWith(
-        baseUrl: _combineBaseUrls(
+            baseUrl: _combineBaseUrls(
           _dio.options.baseUrl,
           baseUrl,
         )));
@@ -260,7 +258,7 @@ class _RestClient implements RestClient {
     )
         .compose(
           _dio.options,
-          'SalesInvoice/SalesOrderGetList?FromDate=01/01/2000&ToDate=31/12/2030&',
+          'SalesInvoice/SalesOrderGetList?FromDate=01/01/2000&ToDate=31/12/2030',
           queryParameters: queryParameters,
           data: _data,
         )

@@ -44,8 +44,9 @@ class _NewHomeScreenState extends ConsumerState<HomeScreen> {
             backgroundColor: Colors.white,
             body: child,
             bottomNavigationBar: Container(
+              width: MediaQuery.of(context).size.width * 0.9,
               decoration: const BoxDecoration(
-                color: Colors.red,
+                color: Colors.transparent,
                 borderRadius: BorderRadius.all(
                  Radius.circular(30.0),
                 ),
@@ -101,7 +102,7 @@ class _NewHomeScreenState extends ConsumerState<HomeScreen> {
                   }
                 },
               ),
-            )
+            ),
           );
         },
       ),

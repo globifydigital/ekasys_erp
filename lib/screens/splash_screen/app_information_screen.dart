@@ -22,7 +22,7 @@ class _AppInformationScreenState extends State<AppInformationScreen> with Single
   late AnimationController _animationController;
   late Animation<double> _animation;
   int _currentSlide = 0;
-  CarouselController _carouselController = CarouselController();
+  CarouselSliderController _carouselController = CarouselSliderController();
 
   @override
   void initState() {

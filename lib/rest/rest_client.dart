@@ -34,7 +34,7 @@ abstract class RestClient {
   @POST('SalesInvoice/SalesOrderInsertandUpdate?')
   Future<dynamic> salesOrderInsert(@Body() List<Map<String, dynamic>> body);
 
-  @POST('SalesInvoice/SalesOrderGetList?FromDate=01/01/2000&ToDate=31/12/2030&')
+  @POST('SalesInvoice/SalesOrderGetList?FromDate=01/01/2000&ToDate=31/12/2030')
   Future<dynamic> getSalesOrders(@Body() Map<String, dynamic> body);
 
   @POST('Purchaseandsalesreports/FastMovingItemsDashboard?number=1&Qty=5')
